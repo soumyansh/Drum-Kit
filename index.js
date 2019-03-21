@@ -10,7 +10,7 @@ for(var i=0;i<document.querySelectorAll(".drum").length;i++){
 
 
 //Detecting Phone Keyboard press
-$("input").keypress(function(event){
+$("input").keydown(function(event){
   makeSound(event.key);
   buttonAnimation(event.key);
 })
